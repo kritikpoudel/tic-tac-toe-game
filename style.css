@@ -1,0 +1,61 @@
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('photo/tictac.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 150px; 
+}
+
+#game {
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
